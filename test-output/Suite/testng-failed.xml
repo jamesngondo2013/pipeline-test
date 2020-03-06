@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.paralleltest.basetest.TestListener"/>
+  </listeners>
+  <test parallel="classes" name="loginTest(failed)">
+    <classes>
+      <class name="com.paralleltest.SignInPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUpSuite"/>
+          <include name="loginTestDBData" invocation-numbers="1 0"/>
+        </methods>
+      </class> <!-- com.paralleltest.SignInPageTest -->
+    </classes>
+  </test> <!-- loginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

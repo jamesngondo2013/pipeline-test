@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-05T19:10:08Z" name="Suite" finished-at="2020-03-05T19:10:41Z" duration-ms="33076">
+    <groups>
+    </groups>
+    <test started-at="2020-03-05T19:10:08Z" name="loginTest" finished-at="2020-03-05T19:10:41Z" duration-ms="33076">
+      <class name="com.paralleltest.SignInPageTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:08Z" name="setUpSuite" finished-at="2020-03-05T19:10:08Z" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:09Z" name="setUp" finished-at="2020-03-05T19:10:20Z" duration-ms="10870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.paralleltest.SignInPageTest.loginTestDBData(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@41d426b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:09Z" name="setUp" finished-at="2020-03-05T19:10:21Z" duration-ms="12362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.paralleltest.SignInPageTest.loginTestDBData(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@41d426b5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTestDBData(java.lang.String, java.lang.String)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:20Z" name="loginTestDBData" data-provider="databaseTestData" finished-at="2020-03-05T19:10:39Z" duration-ms="18869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[unresticteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestDBData -->
+        <test-method signature="loginTestDBData(java.lang.String, java.lang.String)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:21Z" name="loginTestDBData" data-provider="databaseTestData" finished-at="2020-03-05T19:10:40Z" duration-ms="18500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[resticteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestDBData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:39Z" name="tearDown" finished-at="2020-03-05T19:10:40Z" duration-ms="1522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestDBData status=SUCCESS method=SignInPageTest.loginTestDBData(java.lang.String, java.lang.String)[pri:0, instance:com.paralleltest.SignInPageTest@f79e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.paralleltest.SignInPageTest@f79e]" started-at="2020-03-05T19:10:40Z" name="tearDown" finished-at="2020-03-05T19:10:41Z" duration-ms="1182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTestDBData status=SUCCESS method=SignInPageTest.loginTestDBData(java.lang.String, java.lang.String)[pri:0, instance:com.paralleltest.SignInPageTest@f79e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.paralleltest.SignInPageTest -->
+    </test> <!-- loginTest -->
+  </suite> <!-- Suite -->
+</testng-results>
