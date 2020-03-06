@@ -1,25 +1,28 @@
-pipeline{
-	agent any
-	
-	stages{
-		stage ('Compile Stage'){
-		
-			steps {
-				withMaven(maven : 'MAVEN_HOME'){
-					sh 'mvn clean compile'
-				}
-			}
-		}
-		
-		stage ('Testing Stage'){
-			steps {
-					withMaven(maven : 'MAVEN_HOME'){
-						sh 'mvn clean test -P regression'
-					}
-				}
-			
-		}
-		
-	}
+pipeline {
+
+    agent any
+    tools {
+        maven 'MAVEN_HOME' 
+    }
+    stages {
+        stage('Compile Stage') {
+            steps {
+                bat "mvn clean compile" 
+        }
+    }
+
+         stage('Testing Stage') {
+             steps {
+                bat "mvn clean test -P regression"
+        }
+    }
+
+          stage('Deployment Stage') {
+              steps {
+                bat "mvn deploy"
+        }
+    }
+
+  }
 
 }
